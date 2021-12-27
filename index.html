@@ -665,7 +665,7 @@ $( ".decizie-d-btn" ).click(function() {
 /////////////////////////////////////////////////////////////
 $( ".pause-btn" ).click(function() {
   $('.slide-container').children().slick('slickPause')
-  logOutTime = 600000
+  logOutTime = 60000
   $( ".pause-btn" ).css("display", "none")
   $( ".exit-btn" ).css("display", "block")
   resetTimer()
@@ -681,7 +681,7 @@ $( ".exit-btn" ).click(function() {
   $('.slide-container').removeClass('shadow')
   $('.carr').slick('slickPlay')
   resetTimer()
-  logOutTime = 300000
+  logOutTime = 30000
 
 });
 /////////////////////////////////////////////////////////////
@@ -715,7 +715,7 @@ $( ".exit-btn" ).click(function() {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let logOutTime = 300000
+let logOutTime = 30000
 
 let inactivityTime = function() {
         let time;
@@ -735,7 +735,7 @@ let inactivityTime = function() {
         $( ".pause-btn" ).css("display", "block")
         $( ".exit-btn" ).css("display", "none")
         $( ".pause-close-btns" ).css("display", "none")
-        logOutTime = 300000
+        logOutTime = 30000
         // $( ".exit-btn" ).css("display", "none")
         // $( ".pause-btn" ).css("display", "none") //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         }
