@@ -97,7 +97,7 @@
   /* border: solid 4px green; */
   width: 50px;
   position: absolute;
-  left: -50px;
+  left: -10px;
   top: 40%;
   z-index: 100;
   opacity: .3;
@@ -106,7 +106,7 @@
   /* border: solid 4px green; */
   width: 50px;
   position: absolute;
-  right: -50px;
+  right: -10px;
   top: 40%;
   z-index: 100;
   opacity: .3;
@@ -229,9 +229,9 @@
 
 
   <div class="carr">
-    <div class="egt4-btn">
+    <div class="egt-btn">
       <div class="inner">
-        <h2>REGULAMENT <br> PREMIERE MULTI 4</h2>
+        <h2>REGULAMENT <br> EGT </h2>
       </div>
     </div>
 
@@ -257,11 +257,7 @@
     </div>
 
 
-    <div class="impera6-btn">
-      <div class="inner">
-        <h2>REGULAMENT <br> IMPERA 6</h2>
-      </div>
-    </div>
+
 
 
     <div class="ruleta-btn">
@@ -269,11 +265,66 @@
         <h2>REGULAMENT <br> RULETA</h2>
       </div>
     </div>
+
+
+
+
+
+
+    <div class="ordine-btn">
+      <div class="inner">
+        <h2>REGULAMENT <br> ORDINE INTERIOARA</h2>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="cert-btn">
+      <div class="inner">
+        <h2>CERTIFICAT<br>CONSTATATOR</h2>
+      </div>
+    </div>
+
+
+
+
+    <div class="decizie-btn">
+      <div class="inner">
+        <h2>DECIZIE<br>NR: 1644<br>DIN 29.09.2021</h2>
+      </div>
+    </div>
+
+
+    <div class="decizie-b-btn">
+      <div class="inner">
+        <h2>DECIZIE<br>NR: 438<br>DIN 25.03.2021</h2>
+      </div>
+    </div>
+
+
+    <div class="decizie-c-btn">
+      <div class="inner">
+        <h2>DECIZIE<br>NR: 982<br>DIN 28.06.2021</h2>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="decizie-d-btn">
+      <div class="inner">
+        <h2>DECIZIE<br>1644<br>DIN 29.09.2021</h2>
+      </div>
+    </div>
+
+
+
+
   </div>
 </div>
-
-
-<img src="" alt="">
 
 
 
@@ -307,7 +358,7 @@
   autoplay: true,
   arrows: true,
   slidesToShow: 3,
-  slidesToScroll: 2,
+  slidesToScroll: 3,
   appendArrows: ".carr",
   prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="arr-prev" alt=""></div>',
   nextArrow: '<div class="next_arrow"><img src="img/next.png" class="arr-next" alt=""></div>'
@@ -322,13 +373,13 @@
 
 
 
-$( ".egt4-btn" ).click(function() {
-    $(".slide-container").load("div.html .egt4", function (e) {
+$( ".egt-btn" ).click(function() {
+    $(".slide-container").load("div.html .egt", function (e) {
           
 
 
 
-          $('.egt4').slick({
+          $('.egt').slick({
   infinite: true,
   autoplay: true,
   arrows: true,
@@ -435,9 +486,15 @@ $( ".impera-btn" ).click(function() {
 
 
 
-$( ".impera6-btn" ).click(function() {
-    $(".slide-container").load("div.html .impera6", function (e) {
-          $('.impera6').slick({
+
+
+
+
+
+
+$( ".ruleta-btn" ).click(function() {
+    $(".slide-container").load("div.html .ruleta", function (e) {
+          $('.ruleta').slick({
   infinite: true,
   autoplay: true,
   arrows: true,
@@ -456,9 +513,20 @@ $( ".impera6-btn" ).click(function() {
 
 
 
-$( ".ruleta-btn" ).click(function() {
-    $(".slide-container").load("div.html .ruleta", function (e) {
-          $('.ruleta').slick({
+
+
+
+
+
+
+
+
+
+
+
+$( ".ordine-btn" ).click(function() {
+    $(".slide-container").load("div.html .ordine", function (e) {
+          $('.ordine').slick({
   infinite: true,
   autoplay: true,
   arrows: true,
@@ -478,6 +546,122 @@ $( ".ruleta-btn" ).click(function() {
 
 
 
+$( ".cert-btn" ).click(function() {
+    $(".slide-container").load("div.html .cert", function (e) {
+          $('.cert').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: true,
+  prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+  nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+          $('.carr').slick('slickPause')
+          $('.slide-container').addClass('shadow')
+          $( ".pause-close-btns" ).css("display", "block")/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       });
+});
+
+
+
+
+
+
+
+$( ".decizie-btn" ).click(function() {
+    $(".slide-container").load("div.html .decizie", function (e) {
+          $('.decizie').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: true,
+  prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+  nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+          $('.carr').slick('slickPause')
+          $('.slide-container').addClass('shadow')
+          $( ".pause-close-btns" ).css("display", "block")/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       });
+});
+
+
+
+
+
+$( ".decizie-b-btn" ).click(function() {
+    $(".slide-container").load("div.html .decizie-b", function (e) {
+          $('.decizie-b').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: true,
+  prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+  nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+          $('.carr').slick('slickPause')
+          $('.slide-container').addClass('shadow')
+          $( ".pause-close-btns" ).css("display", "block")/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       });
+});
+
+
+
+
+
+$( ".decizie-c-btn" ).click(function() {
+    $(".slide-container").load("div.html .decizie-c", function (e) {
+          $('.decizie-c').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: true,
+  prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+  nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+          $('.carr').slick('slickPause')
+          $('.slide-container').addClass('shadow')
+          $( ".pause-close-btns" ).css("display", "block")/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       });
+});
+
+
+
+
+
+
+
+$( ".decizie-d-btn" ).click(function() {
+    $(".slide-container").load("div.html .decizie-d", function (e) {
+          $('.decizie-d').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: true,
+  prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+  nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+          $('.carr').slick('slickPause')
+          $('.slide-container').addClass('shadow')
+          $( ".pause-close-btns" ).css("display", "block")/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       });
+});
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
 $( ".pause-btn" ).click(function() {
   $('.slide-container').children().slick('slickPause')
