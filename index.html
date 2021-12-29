@@ -198,6 +198,13 @@
   z-index: 1000;
 }
 
+.interzis {
+  line-height: 0;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
 
   </style>
   </head>
@@ -229,6 +236,15 @@
 
 
   <div class="carr">
+
+    <div class="cui-btn">
+      <div class="inner">
+        <h2>CERTIFICAT <br> DE INREGISTRARE </h2>
+      </div>
+    </div>
+
+
+
     <div class="egt-btn">
       <div class="inner">
         <h2>REGULAMENT <br> EGT </h2>
@@ -297,7 +313,7 @@
     </div>
 
 
-    <div class="decizie-b-btn">
+    <div class="decizie438-btn">
       <div class="inner">
         <h2>DECIZIE<br>NR: 438<br>DIN 25.03.2021</h2>
       </div>
@@ -316,14 +332,14 @@
 
     <div class="decizie-d-btn">
       <div class="inner">
-        <h2>DECIZIE<br>1644<br>DIN 29.09.2021</h2>
+        <h2>DECIZIE<br>LICIENTA 2524<br>DIN 29.09.2021</h2>
       </div>
     </div>
 
 
-
-
+    
   </div>
+  <h1 class="interzis">Interzis minorilor sub 18 ani!</h1>
 </div>
 
 
@@ -365,6 +381,35 @@
   // prevArrow: '<button class="slide-arrow prev-arrow"><img src="/img/prev.png" class="arr-prev" alt=""></button>',
   // nextArrow: '<button class="slide-arrow next-arrow"><img src="/img/next.png" class="arr-next" alt=""></button>'
 });
+
+
+
+$( ".cui-btn" ).click(function() {
+    $(".slide-container").load("div.html .cui", function (e) {
+          
+
+
+
+          $('.cui').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: true,
+  prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+  nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+          $('.carr').slick('slickPause')
+          $('.slide-container').addClass('shadow')
+          $( ".pause-close-btns" ).css("display", "block")
+       });
+});
+
+
+
+
+
+
 
 
 
@@ -590,9 +635,10 @@ $( ".decizie-btn" ).click(function() {
 
 
 
-$( ".decizie-b-btn" ).click(function() {
-    $(".slide-container").load("div.html .decizie-b", function (e) {
-          $('.decizie-b').slick({
+$( ".decizie438-btn" ).click(function() {
+  console.log("yooo")
+    $(".slide-container").load("div.html .decizie438", function (e) {
+          $('.decizie438').slick({
   infinite: true,
   autoplay: true,
   arrows: true,
@@ -606,6 +652,7 @@ $( ".decizie-b-btn" ).click(function() {
           $( ".pause-close-btns" ).css("display", "block")/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
        });
 });
+
 
 
 
