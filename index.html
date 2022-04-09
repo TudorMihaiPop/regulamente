@@ -83,7 +83,7 @@
         height: 80%;
         background-color: rgb(92, 92, 92);
         /* background: radial-gradient(circle, rgba(43,3,2,1) 0%, rgba(37,14,3,1) 35%, rgba(2,0,36,1) 100%); */
-        background: radial-gradient(circle, rgb(75, 75, 75)0%, rgb(75, 75, 75)5%, rgb(0, 0, 0) 100%);
+        /* background: radial-gradient(circle, rgb(75, 75, 75)0%, rgb(75, 75, 75)5%, rgb(0, 0, 0) 100%); */
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: .6em;
         display: flex;
@@ -246,6 +246,13 @@
     </div>
 
 
+    <div class="mutare-btn">
+      <div class="inner">
+        <h2> MUTARE </h2>
+      </div>
+    </div>
+
+
 
     <div class="egt-btn">
       <div class="inner">
@@ -278,11 +285,11 @@
 
 
 
-    <div class="ruleta-btn">
+    <!-- <div class="ruleta-btn">
       <div class="inner">
         <h2>REGULAMENT <br> RULETA</h2>
       </div>
-    </div>
+    </div> -->
 
 
 
@@ -338,6 +345,26 @@
       </div>
     </div>
 
+    <div class="egt4-btn">
+      <div class="inner">
+        <h2>REGULAMENT<br>EGT 4</h2>
+      </div>
+    </div>
+
+    <div class="fiveofkings-btn">
+      <div class="inner">
+        <h2>REGULAMENT<br>FIVE OF KINGS</h2>
+      </div>
+    </div>
+    
+
+
+    <div class="playmax40-btn">
+      <div class="inner">
+        <h2>REGULAMENT<br>PLAY MAX 40</h2>
+      </div>
+    </div>
+
 
 
     <!-- <div class="tombola-btn">
@@ -379,6 +406,7 @@
 
 
 
+
         $('.carr').slick({
   infinite: true,
   autoplay: true,
@@ -392,15 +420,84 @@
   // nextArrow: '<button class="slide-arrow next-arrow"><img src="/img/next.png" class="arr-next" alt=""></button>'
 });
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
 
 $( ".cui-btn" ).click(function() {
     $(".slide-container").load("div.html .cui", function (e) {
           
 
-
-
           $('.cui').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: true,
+  prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+  nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+          $('.carr').slick('slickPause')
+          $('.slide-container').addClass('shadow')
+          $( ".pause-close-btns" ).css("display", "block")
+       });
+});
+
+
+
+
+$( ".playmax40-btn" ).click(function() {
+    $(".slide-container").load("div.html .playmax40", function (e) {
+          
+
+          $('.playmax40').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: true,
+  prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+  nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+          $('.carr').slick('slickPause')
+          $('.slide-container').addClass('shadow')
+          $( ".pause-close-btns" ).css("display", "block")
+       });
+});
+
+
+
+
+
+$( ".fiveofkings-btn" ).click(function() {
+    $(".slide-container").load("div.html .fiveofkings", function (e) {
+          
+
+          $('.fiveofkings').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: true,
+  prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+  nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+          $('.carr').slick('slickPause')
+          $('.slide-container').addClass('shadow')
+          $( ".pause-close-btns" ).css("display", "block")
+       });
+});
+
+
+
+
+$( ".egt4-btn" ).click(function() {
+    $(".slide-container").load("div.html .egt4", function (e) {
+          
+          $('.egt4').slick({
   infinite: true,
   autoplay: true,
   arrows: true,
@@ -423,6 +520,27 @@ $( ".cui-btn" ).click(function() {
 
 
 
+$( ".mutare-btn" ).click(function() {
+    $(".slide-container").load("div.html .mutare", function (e) {
+          
+
+          $('.mutare').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: true,
+  prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+  nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+          $('.carr').slick('slickPause')
+          $('.slide-container').addClass('shadow')
+          $( ".pause-close-btns" ).css("display", "block")
+       });
+});
+
+
+
 
 
 
@@ -431,8 +549,6 @@ $( ".cui-btn" ).click(function() {
 $( ".egt-btn" ).click(function() {
     $(".slide-container").load("div.html .egt", function (e) {
           
-
-
 
           $('.egt').slick({
   infinite: true,
@@ -461,6 +577,7 @@ $( ".egt-btn" ).click(function() {
 
 $( ".hbp7-btn" ).click(function() {
     $(".slide-container").load("div.html .hbp7", function (e) {
+
           $('.hbp7').slick({
   infinite: true,
   autoplay: true,
