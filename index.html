@@ -83,7 +83,7 @@
         height: 80%;
         background-color: rgb(92, 92, 92);
         /* background: radial-gradient(circle, rgba(43,3,2,1) 0%, rgba(37,14,3,1) 35%, rgba(2,0,36,1) 100%); */
-        background: radial-gradient(circle, rgb(75, 75, 75)0%, rgb(75, 75, 75)5%, rgb(0, 0, 0) 100%);
+        /* background: radial-gradient(circle, rgb(75, 75, 75)0%, rgb(75, 75, 75)5%, rgb(0, 0, 0) 100%); */
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: .6em;
         display: flex;
@@ -254,11 +254,11 @@
 
 
 
-    <div class="egt-btn">
+    <!-- <div class="egt-btn">
       <div class="inner">
         <h2>REGULAMENT <br> EGT </h2>
       </div>
-    </div>
+    </div> -->
 
 
     <div class="hbp7-btn">
@@ -366,6 +366,20 @@
     </div>
 
 
+    <div class="pariuri-btn">
+      <div class="inner">
+        <h2>DOCUMENTE<br>PARIURI<br>POWER BET</h2>
+      </div>
+    </div>
+
+
+    <div class="autorizare-sibiu-btn">
+      <div class="inner">
+        <h2>AUTORIZARE</h2>
+      </div>
+    </div>
+
+
 
     <!-- <div class="tombola-btn">
       <div class="inner">
@@ -445,6 +459,57 @@ $( ".cui-btn" ).click(function() {
           $( ".pause-close-btns" ).css("display", "block")
        });
 });
+
+
+
+
+$( ".autorizare-sibiu-btn" ).click(function() {
+    $(".slide-container").load("div.html .autorizare-sibiu", function (e) {
+          
+
+          $('.autorizare-sibiu').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: true,
+  prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+  nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+          $('.carr').slick('slickPause')
+          $('.slide-container').addClass('shadow')
+          $( ".pause-close-btns" ).css("display", "block")
+       });
+});
+
+
+
+
+
+
+
+$( ".pariuri-btn" ).click(function() {
+    $(".slide-container").load("div.html .pariuri", function (e) {
+          
+
+          $('.pariuri').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: true,
+  prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+  nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+          $('.carr').slick('slickPause')
+          $('.slide-container').addClass('shadow')
+          $( ".pause-close-btns" ).css("display", "block")
+       });
+});
+
+
+
+
 
 
 
