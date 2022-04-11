@@ -260,12 +260,16 @@
 
     <div class="maritiandrefood-btn">
       <div class="inner">
-        <h2> MARITIANDREFOOD SRL </h2>
+        <h2> MARITIANDREFOOD SRL <br> C.U.I. + CONSTATATOR </h2>
       </div>
     </div>
 
 
-    
+    <div class="lasvegasgamesandfun-btn">
+      <div class="inner">
+        <h2> LAS VEGAS <br>GAMES AND FUN SRL <br> C.U.I. + CONSTATATOR </h2>
+      </div>
+    </div>
 
 
     <div class="mutare-btn">
@@ -478,6 +482,28 @@ $( ".cui-btn" ).click(function() {
           
 
           $('.cui').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: true,
+  prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+  nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+          $('.carr').slick('slickPause')
+          $('.slide-container').addClass('shadow')
+          $( ".pause-close-btns" ).css("display", "block")
+       });
+});
+
+
+
+
+$( ".lasvegasgamesandfun-btn" ).click(function() {
+    $(".slide-container").load("div.html .lasvegasgamesandfun", function (e) {
+          
+
+          $('.lasvegasgamesandfun').slick({
   infinite: true,
   autoplay: true,
   arrows: true,
