@@ -380,6 +380,13 @@
     </div>
 
 
+    <div class="jackpot-btn">
+      <div class="inner">
+        <h2>NOTIFICARE<br>JACKPOT</h2>
+      </div>
+    </div>
+
+
 
     <!-- <div class="tombola-btn">
       <div class="inner">
@@ -459,6 +466,32 @@ $( ".cui-btn" ).click(function() {
           $( ".pause-close-btns" ).css("display", "block")
        });
 });
+
+
+
+
+
+$( ".jackpot-btn" ).click(function() {
+    $(".slide-container").load("div.html .jackpot", function (e) {
+          
+
+          $('.jackpot').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: true,
+  prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+  nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+          $('.carr').slick('slickPause')
+          $('.slide-container').addClass('shadow')
+          $( ".pause-close-btns" ).css("display", "block")
+       });
+});
+
+
+
 
 
 
