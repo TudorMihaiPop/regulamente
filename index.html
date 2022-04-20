@@ -351,6 +351,11 @@
     </div>
 
 
+    <div class="decizie544-btn">
+      <div class="inner">
+        <h2>DECIZIE<br>NR: 544<br>DIN 29.03.2022</h2>
+      </div>
+    </div>
 
 
     <div class="decizie-btn">
@@ -484,6 +489,26 @@ $( ".cui-btn" ).click(function() {
           
 
           $('.cui').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: true,
+  prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+  nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+          $('.carr').slick('slickPause')
+          $('.slide-container').addClass('shadow')
+          $( ".pause-close-btns" ).css("display", "block")
+       });
+});
+
+
+$( ".decizie544-btn" ).click(function() {
+    $(".slide-container").load("div.html .decizie544", function (e) {
+          
+
+          $('.decizie544').slick({
   infinite: true,
   autoplay: true,
   arrows: true,
