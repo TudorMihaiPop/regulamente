@@ -186,7 +186,42 @@ $(".ordine-btn").click(function () {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // JOCURI
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$(".impera6-btn").click(function () {
+    $(".slide-container").load("div.html .impera6", function (e) {
+
+
+        $('.impera6').slick({
+            infinite: true,
+            autoplay: true,
+            arrows: true,
+            prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+            nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+        $('.carr').slick('slickPause')
+        $('.slide-container').addClass('shadow')
+        $(".pause-close-btns").css("display", "block")
+    });
+});
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $(".egt-btn").click(function () {
     $(".slide-container").load("div.html .egt", function (e) {
