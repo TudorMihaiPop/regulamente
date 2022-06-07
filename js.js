@@ -203,6 +203,46 @@ $(".ordine-btn").click(function () {
 
 // JOCURI
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$(".pegasus-btn").click(function () {
+    $(".slide-container").load("div.html .pegasus", function (e) {
+
+
+        $('.pegasus').slick({
+            infinite: true,
+            autoplay: true,
+            arrows: true,
+            prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+            nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+        $('.carr').slick('slickPause')
+        $('.slide-container').addClass('shadow')
+        $(".pause-close-btns").css("display", "block")
+    });
+});
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$(".jpl-btn").click(function () {
+    $(".slide-container").load("div.html .jpl", function (e) {
+
+
+        $('.jpl').slick({
+            infinite: true,
+            autoplay: true,
+            arrows: true,
+            prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+            nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+        $('.carr').slick('slickPause')
+        $('.slide-container').addClass('shadow')
+        $(".pause-close-btns").css("display", "block")
+    });
+});
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $(".impera6-btn").click(function () {
     $(".slide-container").load("div.html .impera6", function (e) {
 
@@ -406,7 +446,47 @@ $(".ruleta-btn").click(function () {
 
 // ///////////////     SPECIFICE
 
+// NASAUD
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$(".jackpot-nasaud-btn").click(function () {
+    $(".slide-container").load("div.html .jackpot-nasaud", function (e) {
 
+
+        $('.jackpot-nasaud').slick({
+            infinite: true,
+            autoplay: true,
+            arrows: true,
+            prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+            nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+        $('.carr').slick('slickPause')
+        $('.slide-container').addClass('shadow')
+        $(".pause-close-btns").css("display", "block")
+    });
+});
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$(".constatator-nasaud-btn").click(function () {
+    $(".slide-container").load("div.html .constatator-nasaud", function (e) {
+
+
+        $('.constatator-nasaud').slick({
+            infinite: true,
+            autoplay: true,
+            arrows: true,
+            prevArrow: '<div class="left_arrow"><img src="img/prev.png" class="reg-prev-arr" alt=""></div>',
+            nextArrow: '<div class="next_arrow"><img src="img/next.png" class="reg-next-arr" alt=""></div>',
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+        $('.carr').slick('slickPause')
+        $('.slide-container').addClass('shadow')
+        $(".pause-close-btns").css("display", "block")
+    });
+});
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // FAGARAS
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $(".constatator-fagaras-btn").click(function () {
